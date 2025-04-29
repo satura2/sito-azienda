@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nome Azienda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Azienda</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Benvenuti in Nome Azienda</h1>
+    <p>Soluzioni professionali per il tuo business</p>
+    <button onclick="scrollToContact()">Contattaci</button>
+  </section>
+
+  <section id="servizi" class="servizi">
+    <h2>I nostri servizi</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Consulenza</h3>
+        <p>Ti aiutiamo a crescere nel tuo settore.</p>
+      </div>
+      <div class="card">
+        <h3>Progettazione</h3>
+        <p>Soluzioni su misura per ogni esigenza.</p>
+      </div>
+      <div class="card">
+        <h3>Supporto</h3>
+        <p>Assistenza continua per i nostri clienti.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatti" class="contatti">
+    <h2>Contattaci</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Nome" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Messaggio" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nome Azienda. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

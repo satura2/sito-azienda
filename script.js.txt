@@ -1,0 +1,14 @@
+function toggleMenu() {
+  const nav = document.getElementById('navLinks');
+  nav.classList.toggle('show');
+}
+
+function scrollToContact() {
+  document.getElementById('contatti').scrollIntoView({ behavior: 'smooth' });
+}
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('formMessage').textContent = "Messaggio inviato con successo!";
+  this.reset();
+});
